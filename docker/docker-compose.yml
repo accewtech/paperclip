@@ -51,3 +51,8 @@ services:
 volumes:
   pgdata:
   paperclip-data:
+
+security_opt:
+  - seccomp:unconfined
+cap_add:
+  - SYS_ADMIN
